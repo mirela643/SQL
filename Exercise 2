@@ -1,0 +1,4 @@
+SELECT name AS "Name",
+       POSITION AS "Position"
+FROM nurse
+WHERE POSITION='Head Nurse';
