@@ -1,0 +1,2 @@
+SELECT count(DISTINCT patient) AS "No. of patients taken at least one appointment"
+FROM appointment;
