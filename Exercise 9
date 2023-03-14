@@ -1,0 +1,7 @@
+SELECT p.name AS "Physician",
+       t.name AS "Treatment"
+FROM physician p,
+     procedure t,
+     trained_in a
+WHERE p.employeeid=a.physician
+  AND a.treatment=t.code;
