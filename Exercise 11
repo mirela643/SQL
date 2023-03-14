@@ -1,0 +1,6 @@
+SELECT p.name AS "Physician",
+       p.position "Designation"
+FROM physician p
+LEFT JOIN trained_in t ON p.employeeid=t.physician
+WHERE t.treatment IS NULL
+ORDER BY employeeid;
