@@ -1,0 +1,3 @@
+SELECT *
+FROM nurse
+WHERE registered='false';
