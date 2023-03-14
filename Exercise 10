@@ -1,7 +1,0 @@
-SELECT p.name AS "Physician",
-       p.position,
-       d.name AS "Department"
-FROM physician p
-JOIN affiliated_with a ON a.physician=p.employeeid
-JOIN department d ON a.department=d.departmentid
-WHERE primaryaffiliation='false';
