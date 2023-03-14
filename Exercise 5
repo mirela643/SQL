@@ -1,0 +1,4 @@
+SELECT blockfloor AS "Floor",
+       blockcode AS "Block"
+FROM room
+WHERE roomnumber=212;
