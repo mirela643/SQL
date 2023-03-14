@@ -1,6 +1,0 @@
-SELECT p.name "Patient",
-       count(t.patient) "Appointment for No. of Physicians"
-FROM appointment t
-JOIN patient p ON t.patient=p.ssn
-GROUP BY p.name
-HAVING count(t.patient)>=1;
