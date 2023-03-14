@@ -1,0 +1,5 @@
+SELECT t.name AS "Patient",
+       t.address AS "Address",
+       p.name AS "Physician"
+FROM patient t
+JOIN physician p ON t.pcp=p.employeeid;
