@@ -1,0 +1,7 @@
+SELECT p.name AS "Physician",
+       d.name AS "Department"
+FROM physician p,
+     department d,
+     affiliated_with a
+WHERE p.employeeid=a.physician
+  AND a.department=d.departmentid;
